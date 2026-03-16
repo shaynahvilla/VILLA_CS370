@@ -121,7 +121,7 @@ class Scanner {
 			while (isDigit(peek())) advance();
 		}		
 
-		String numberString = source.substring(start, current-1);
+		String numberString = source.substring(start, current);
 		addToken(NUMBER, Double.parseDouble(numberString));
 	}
 
